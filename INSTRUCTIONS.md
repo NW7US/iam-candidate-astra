@@ -1,7 +1,7 @@
 # Instructions
 
 * [Prepare](#Prepare)
-* [Fork](#Fork)
+* [Clone](#Clone)
 * [Develop](#Develop)
 * [Push](#Push)
 * [Submit](#Submit)
@@ -13,14 +13,39 @@
   * SQL Server Data Tools (SSDT) for Visual Studio 2022.
   * SQL Server 2019 LocalDB
 
-## Fork
+## Clone
 
-Create a fork of this repository on GitHub.  Alternatively, you may use another service (such as
-BitBucket) by cloning the repository and pushing it to that that site.  Ultimately, the submission
-needs to be accessible to the reviewers.
+Clone this repository (do not fork it) and push it to your own repository.
+
+> Note: You may use any service you prefer, not just GitHub.
+
+<details>
+    <summary>Expand for detailed instructions</summary>
+
+Clone the repository.
+
+```bash
+git clone https://github.com/UWIT-IAM/iam-candidate-astra
+```
+
+Change the remote of your URL.
+
+```bash
+git remote set-url origin <url-of-your-repository>
+```
+
+Push to your repository.
+
+```bash
+git push
+```
+
+If you initialized the repository with files, add the `--force` option to the `push` command to overwrite them.
+
+</details>
+
 
 ## Develop
-
 
 1. Review the project in the [legacy](legacy) folder.
     > If you get a runtime error about being unable to access ...\bin\roslyn\csc.exe, right-click the solution and select "Restore NuGet Packages".  The first restore operation doesn't always copy the files to bin\roslyn.
